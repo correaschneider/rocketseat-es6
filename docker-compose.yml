@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   es6:
-    build: ./docker/yarn
+    build: .
     image: yarn:1.17.3
     container_name: rocketseat_es6
     working_dir: /es6

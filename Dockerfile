@@ -11,3 +11,6 @@ RUN apt-get update && \
 RUN apt-get clean autoclean && \
     apt-get autoremove --yes && \
     rm -rf /var/lib/{apt,dpkg,cache,log}/
+
+RUN node -v
+RUN yarn -v
