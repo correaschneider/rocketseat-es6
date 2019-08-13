@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  es6:
+    build: ./docker/yarn
+    image: yarn:1.17.3
+    container_name: rocketseat_es6
+    working_dir: /es6
+    volumes:
+      - node_modules:/es6/node_modules
+    command: ["sleep", "36000"]
+
+volumes:
+  node_modules:
