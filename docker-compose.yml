@@ -7,6 +7,7 @@ services:
     container_name: rocketseat_es6
     working_dir: /es6
     volumes:
+      - ./:/es6/
       - node_modules:/es6/node_modules
     command: ["sleep", "36000"]
 
