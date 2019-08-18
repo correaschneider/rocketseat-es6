@@ -1,5 +1,16 @@
-import ClassUser, { age as UserAge } from './functions'
+import axios from 'axios'
 
-ClassUser.info()
+class Api {
+    static async getUserInfo(username) {
+        try {
+            const response = await axios.get(`https://api.github.com/users/${username}`)
 
-document.body.append(UserAge)
+            console.log(response)
+        } catch (err) {
+            console.warn('Erro na API.', err)
+        }
+    }
+}
+
+Api.getUserInfo('correaschneider')
+Api.getUserInfo('correaschneider1')
