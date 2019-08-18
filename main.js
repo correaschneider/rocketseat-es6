@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const name = "Pedro"
 const age = 34
 
@@ -14,3 +15,5 @@ const user = {
 }
 
 console.log(user)
+=======
+>>>>>>> Melhorando estruturas
