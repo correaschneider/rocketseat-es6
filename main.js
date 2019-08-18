@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-const name = "Pedro"
-const age = 34
+import sum, { sub, mult } from './webpack/functions'
 
-// const user = {
-//     name: name,
-//     age: age,
-//     company: "CWI"
-// }
-
-const user = {
-    name,
-    age,
-    company: "CWI"
-}
-
-console.log(user)
-=======
->>>>>>> Melhorando estruturas
+console.log(sum(1,2))
+console.log(sub(1,2))
+console.log(mult(1,2))
