@@ -9,6 +9,8 @@ services:
     volumes:
       - ./:/es6/
       - node_modules:/es6/node_modules
+    ports:
+      - 8080:8080
     command: ["yarn", "dev"]
 
 volumes:

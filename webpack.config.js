@@ -1,8 +1,13 @@
 module.exports = {
-    entry: './main.js',
+    entry: './src/main.js',
     output: {
-        path: __dirname,
+        path: __dirname + '/public',
         filename: 'bundle.js',
+    },
+    devServer: {
+        contentBase:  __dirname + '/public',
+        host: '0.0.0.0',
+        port: '8080'
     },
     module: {
         rules: [
